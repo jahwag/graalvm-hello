@@ -41,7 +41,12 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
-                    <executable>${build.directory}/HelloWorld</executable>
+                    <executable>upx</executable>
+                    <arguments>
+                        <argument>${build.directory}/HelloWorld</argument>
+                        <argument>-o</argument>
+                        <argument>${build.directory}/HelloWorld_upx</argument>
+                    </arguments>
                 </configuration>
             </plugin>
 
