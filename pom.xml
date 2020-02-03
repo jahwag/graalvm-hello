@@ -25,6 +25,7 @@
                 <configuration>
                     <mainClass>com.github.jahwag.Main</mainClass>
                     <imageName>HelloWorld</imageName>
+                    <buildArgs>-H:IncludeResources=input</buildArgs>
                 </configuration>
                 <executions>
                     <execution>
@@ -43,9 +44,9 @@
                 <configuration>
                     <executable>upx</executable>
                     <arguments>
-                        <argument>${build.directory}/HelloWorld</argument>
+                        <argument>${project.build.directory}/HelloWorld</argument>
                         <argument>-o</argument>
-                        <argument>${build.directory}/HelloWorld_upx</argument>
+                        <argument>${project.build.directory}/HelloWorld_upx</argument>
                     </arguments>
                 </configuration>
             </plugin>
