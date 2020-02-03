@@ -21,4 +21,6 @@ As a reference, on MacOS the original executable is compressed from 8 -> 2.6 MB.
 ## Running
 To run, execute the following command:
 1. './target/HelloWorld'
-2. You should see output 'Hello, world!'
+
+If you used shrinking, run the following:
+1. './target/HelloWorld_upx'
